@@ -10,14 +10,14 @@ header {
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(1rem);
-  border-radius: 2rem;
+  border-radius: 1rem;
   box-shadow: 0 0 100rem rgba(255, 255, 255, 0.5);
 
   display: flex;
   align-items: center;
 
   position: fixed;
-  top: 20%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -26,11 +26,81 @@ header {
 
 header > h1 {
   font-family: "League Spartan";
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 0.2rem;
 }
 
 header > span {
   font-family: "Shadows Into Light";
+  font-size: 2rem;
+}
+
+.liner {
+  color: white;
+  font-family: "League Spartan";
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 1rem;
+
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.liner > span {
+  color: black;
+  font-family: "Shadows Into Light";
   font-size: 3rem;
+  padding: 0 1rem;
+}
+
+@media (max-width: 700px) {
+  main > img {
+    height: 100vh;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+
+  header {
+    backdrop-filter: blur(0.2rem);
+    border-radius: 1rem;
+    padding: 1rem 2rem 0.5rem;
+
+    top: 10%;
+  }
+
+  header > h1 {
+    font-size: 2rem;
+    text-transform: lowercase;
+  }
+
+  header > span {
+    font-size: 1.5rem;
+  }
+  .liner {
+    color: white;
+    font-family: "League Spartan";
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .liner > span {
+    font-family: "Shadows Into Light";
+    font-size: 1.5rem;
+  }
 }
