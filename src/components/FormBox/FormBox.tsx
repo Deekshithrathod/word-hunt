@@ -6,13 +6,14 @@ const FormBox = () => {
   const [lname, setLname] = useState("");
   const [email, setEmail] = useState("");
 
-  const handleSumit = (e) => {
+  const handleSumit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
     const userDetails = {
       fname,
       lname,
       email,
     };
+    userDetails;
   };
 
   return (
